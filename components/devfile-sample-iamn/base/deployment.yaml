@@ -9,9 +9,9 @@ metadata:
     app.kubernetes.io/name: devfile-sample-iamn
     app.kubernetes.io/part-of: my-app-node
   name: devfile-sample-iamn
-  namespace: ktsao-tenant
 spec:
-  replicas: 1
+  replicas: 0
+  revisionHistoryLimit: 0
   selector:
     matchLabels:
       app: nodejs-app
